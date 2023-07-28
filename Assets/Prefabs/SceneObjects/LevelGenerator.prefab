@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &166531086734425983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166531086734425969}
+  - component: {fileID: 5376805708464273402}
+  - component: {fileID: 4069321494238520627}
+  - component: {fileID: 348543848436289615}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: LevelGenerator
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166531086734425969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166531086734425983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5376805708464273402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166531086734425983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0cb132f692a664a8ddbf7516be8080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossRooms: []
+  cell: {fileID: 4645122864918698316, guid: 0a089a95eee113e4bb8a4c5bca43b766, type: 3}
+  maxNumberRooms: 40
+  bossLevel: 0
+--- !u!114 &4069321494238520627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166531086734425983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2045cc340c70ce54baaaa07f9cd052ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exit: {fileID: 6260414922615590929, guid: 329e788cb62c4ed4ba441da3605c7fb6, type: 3}
+  chest: {fileID: 3448873310262672882, guid: 33ff0935f128adf4e9f67cc24580208c, type: 3}
+  trap: {fileID: 653627631782222790, guid: 33515d6c83cc29f4691bbdba5122ad43, type: 3}
+  enemyOften: {fileID: 4022720887032525570, guid: f3c4be1b12ddc7642a82090dc1dfc2f7,
+    type: 3}
+  enemyAverage: {fileID: 1690017340551586323, guid: 2ec34870af15898438e37a1177f3182c,
+    type: 3}
+  enemyRarely: {fileID: 7090549126138738722, guid: 345335589507f9041a2a76f62e865cc4,
+    type: 3}
+  numberChests: 4
+  numberEnemies: 7
+  numberTraps: 3
+--- !u!114 &348543848436289615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166531086734425983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1119f550106fa141903d7475d779959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  center: {fileID: 8912672214793144271, guid: b3798459210ff1e49b987769177ef8b7, type: 3}
+  leftRightPath: {fileID: 7975138843018360901, guid: b3798459210ff1e49b987769177ef8b7,
+    type: 3}
+  upDownPath: {fileID: -5824253305768119276, guid: b3798459210ff1e49b987769177ef8b7,
+    type: 3}
+  upRightCorner: {fileID: 8800120096241986949, guid: b3798459210ff1e49b987769177ef8b7,
+    type: 3}
+  upLeftCorner: {fileID: -5469082521774831296, guid: b3798459210ff1e49b987769177ef8b7,
+    type: 3}
+  downRightCorner: {fileID: -2503985576180177715, guid: b3798459210ff1e49b987769177ef8b7,
+    type: 3}
+  downLeftCorner: {fileID: 4525875707592885123, guid: b3798459210ff1e49b987769177ef8b7,
+    type: 3}
+  up: {fileID: -6721985613570814259, guid: b3798459210ff1e49b987769177ef8b7, type: 3}
+  down: {fileID: -6518431736658531454, guid: b3798459210ff1e49b987769177ef8b7, type: 3}
+  right: {fileID: -8705763722890432524, guid: b3798459210ff1e49b987769177ef8b7, type: 3}
+  left: {fileID: -215467988562745655, guid: b3798459210ff1e49b987769177ef8b7, type: 3}
+  upWall: {fileID: 5176555620486042818, guid: b3798459210ff1e49b987769177ef8b7, type: 3}
+  downWall: {fileID: 5869114392289179081, guid: b3798459210ff1e49b987769177ef8b7,
+    type: 3}
+  rightWall: {fileID: -844867042343572584, guid: b3798459210ff1e49b987769177ef8b7,
+    type: 3}
+  leftWall: {fileID: -3769789813680141717, guid: b3798459210ff1e49b987769177ef8b7,
+    type: 3}
